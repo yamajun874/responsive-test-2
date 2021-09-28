@@ -1,0 +1,303 @@
+* {
+  font-family: 'Shippori Mincho', serif;
+}
+
+.first-view {
+  background: url(../img/firstview.png) no-repeat;
+  background-size: cover;
+  background-position: bottom right;
+  height: 600px;
+  color: white  ;
+}
+
+.first-view__list {
+  display: flex;  
+  align-items:center;
+  padding: 20px;
+}
+
+.first-view__nav {
+  display: flex;
+}
+
+.first-view__logo {
+  font-size: 40px;
+  padding-right: 50px;
+}
+
+.first-view__item {
+  font-size: 25px;
+}
+
+.first-view__item:not(:last-child) {
+  padding-right: 20px;
+}
+
+.first-view__ttl-message {
+  font-size: 60px;
+}
+
+.first-view__ttl-message--small {
+  font-size: 22px;
+}
+
+.first-view__ttl {
+  position: relative;
+  top: 40%;
+  left: 5%; 
+  text-align: center;
+  width: 30%;
+  line-height: 70px;
+}
+
+.pic-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: black;
+}
+
+.pic {
+  width: 33%;
+  color: white;
+  height: 300px;
+}
+
+.LifeStyle {
+  background: url(../img/topics-img1.png)no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.Important {
+  background: url(../img/topics-img2.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.Culture {
+  background: url(../img/topics-img3.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.pic__ttl {
+  font-size: 26px;
+  padding: 20px;
+}
+
+.pic__sub {
+  padding: 0 20px 20px 20px;
+}
+
+.pic__message {
+  position: relative;
+  top: 60%;
+}
+
+.content {
+  background: linear-gradient(black, white);;
+}
+
+.content__ttl {
+  color: white;
+  font-size: 60px;
+  padding: 50px 0 30px 0;
+}
+
+.content--Styles {
+  width: 80%;
+  margin: 0px auto;
+  padding-bottom: 30px
+  ;
+}
+
+.content-pic__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.styles-img {
+  width: 30%;
+  padding-bottom: 30px;
+}
+
+.styles-img img {
+  width: 100%;
+}
+
+.about {
+  background: black;
+  padding: 60px;
+  display: flex;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+  color: white;
+}
+
+.about__pic {
+  width: 40%;
+  margin-right: 100px;
+}
+
+.about__pic img {
+  width: 100%;
+}
+
+.about__message {
+  width: 60%;
+  margin: 70px auto;
+}
+
+.about__message-ttl {
+  line-height: 60px;
+  padding-bottom: 50px;
+  /* padding-top: 70px; */
+}
+
+.about__message-ttl--bold {
+  font-size: 50px;
+}
+
+.about__message-ttl--small {
+  font-size: 26px;
+}
+.about__message-sub {
+  line-height: 25px;
+  padding-bottom: 30px;
+  font-size: 20px;
+}
+
+.about__btn {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  border: 1px solid white;
+  width: 175px;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.last-view {
+  background: black;
+  color: white;
+  text-align: center;
+  height: 50px;
+}
+
+.menu {
+  height: 32px;
+  width: 30px;
+  position: relative;
+  cursor: pointer;
+  display: none;
+}
+
+.menu-item--top, .menu-item--middle, .menu-item--bottom {
+  background: white;
+  height: 2px;
+  position: absolute;
+  width: 100%;
+  border-radius: 3px;
+}
+
+.menu-item--top {
+  top: 0;
+}
+
+.menu-item--middle {
+  top: 14px;
+}
+
+.menu-item--bottom {
+  bottom: 0;
+}
+
+
+
+@media screen and (max-width: 768px){
+  .first-view__item {
+    display: none;
+  }
+
+  .pic__ttl {
+  font-size: 20px;
+  }
+  
+  .pic__sub {
+    display: none;
+  }
+
+  .styles-img {
+    width: 49%;
+  } 
+
+  .about__pic {
+  width: 45%;
+  margin-right: 0;
+  }
+
+  .about__message {
+  width: 50%;
+  margin: -40px auto;
+  } 
+
+  .about__message-sub {
+    font-size: 14px;
+  }
+
+.first-view__ttl {
+  width: 50%;
+}
+
+.first-view__list {
+  justify-content: space-between;
+}
+
+.menu {
+  display: block;
+}
+}
+
+@media screen and (max-width: 480px){
+  .first-view {
+    position: relative;
+  }
+  
+  .first-view__ttl {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+
+  .pic-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .pic {
+    width: 100%;
+  }
+
+  .content--Styles {
+    width: 90%;
+  }
+  .about {
+    flex-wrap: wrap;
+  }
+
+  .about__pic {
+    width: 100%;
+  }
+
+.about__message {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+
+}
+
